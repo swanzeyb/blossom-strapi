@@ -7,7 +7,9 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "image:prod": "docker buildx build --platform linux/amd64 -f Dockerfile.prod -t swanzeyb/strapi:latest -o type=docker,dest=- . > blossom-prod.tar",
+    "image:dev": "docker buildx build --platform linux/amd64 -f Dockerfile -t swanzeyb/strapi:dev -o type=docker,dest=- . > blossom-dev.tar"
   },
   "devDependencies": {},
   "dependencies": {
