@@ -4,8 +4,4 @@ module.exports = ({ env }) => ({
       jwtSecret: env('JWT_SECRET'),
     },
   },
-  'gcalendar': {
-    enabled: true,
-    resolve: './src/plugins/gcalendar'
-  },
 })

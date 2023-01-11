@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -25,6 +26,9 @@
     },
     "End": {
       "type": "time"
+    },
+    "eventId": {
+      "type": "uid"
     }
   }
 }
